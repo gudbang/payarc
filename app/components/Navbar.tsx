@@ -10,6 +10,7 @@ const navItems = [
   { href: '/dashboard', label: 'Dashboard' },
   { href: '/pay', label: 'Pay' },
   { href: '/request', label: 'Request' },
+  { href: '/swap', label: 'Swap' },
   { href: '/faucet', label: 'Faucet' },
   { href: '/history', label: 'History' },
   { href: '/pool', label: 'Pool' },
