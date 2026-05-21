@@ -7,7 +7,7 @@ import { useState } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navItems = [
-  { href: '/', label: 'Home' },
+  { href: '/dashboard', label: 'Dashboard' },
   { href: '/pay', label: 'Pay' },
   { href: '/request', label: 'Request' },
   { href: '/faucet', label: 'Faucet' },

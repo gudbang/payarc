@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Providers } from './providers'
-import { Navbar } from './components/Navbar'
+import { NavbarWrapper } from './components/NavbarWrapper'
+import { AppGate } from './components/AppGate'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -13,8 +14,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body>
         <Providers>
-          <Navbar />
-          {children}
+          <AppGate>
+            <NavbarWrapper />
+            {children}
+          </AppGate>
         </Providers>
       </body>
     </html>
